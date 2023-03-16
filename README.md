@@ -9,7 +9,8 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
 
 &nbsp;
 
-<h2 align="center"><i>Languages and Tools</i></h2>
+<h3 align="center"><i>Languages and Tools</i></h3>
+
 <p align="center">
     <a href="https://www.python.org" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
@@ -37,18 +38,30 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
     </a>
 </p>
 
-<h2 align="center"><i>Usual Workflow Badges</i></h2>
-<div style="text-align: center;">
+<h3 align="center"><i>Usual Workflow Badges</i></h3>
 
-![Tests](https://github.com/oedokumaci/gale-shapley/actions/workflows/tests.yml/badge.svg)
-![Quality](https://github.com/oedokumaci/gale-shapley/actions/workflows/quality.yml/badge.svg)
-[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-</div>
+<p align="center">
+    <a>
+        <img src="https://github.com/oedokumaci/gale-shapley/actions/workflows/tests.yml/badge.svg" alt="tests"/>
+    </a>
+    <a>
+        <img src="https://github.com/oedokumaci/gale-shapley/actions/workflows/quality.yml/badge.svg" alt="quality"/>
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/pdm-managed-blueviolet" alt="pdm"/>
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="black"/>
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white" alt="pre-commit"/>
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license-mit"/>
+    </a>
+</p>
 
-<h2 align="center"><i>Github Statistics</i></h2>
+<h3 align="center"><i>Github Statistics</i></h3>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oedokumaci&show_icons=true&locale=en&layout=compact" alt="languages" style="display:block;"/>
