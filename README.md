@@ -32,9 +32,9 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
 
 <h2 align="left"><i>Github Statistics</i></h2>
 <p align="left">
-    <img src="https://github-readme-stats.vercel.app/api?username=oedokumaci&show_icons=true&locale=en" height="100" width="200" hspace="3"/>
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=oedokumaci&" height="100" width="215" hspace="3"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oedokumaci&show_icons=true&locale=en&layout=compact" height="100" width="183" hspace="3"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=oedokumaci&show_icons=true&locale=en" alt="stats" height="100" width="200" hspace="3"/>
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=oedokumaci&" alt="streak" height="100" width="215" hspace="3"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oedokumaci&show_icons=true&locale=en&layout=compact" height="100" alt="languages" width="183" hspace="3"/>
 </p>
 
 
