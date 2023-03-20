@@ -1,13 +1,13 @@
 <h1 align="center">Hey, I'm Ersoy</h1>
 <h3 align="center"><i>Quant • ML Engineer • Ph.D. Candidate</i></h3>
 
-&nbsp;
-
-I currently work as a Quantitative Researcher and Machine Learning Engineer in finance. I mainly develop everything I do in Python.
+I currently work as a Quantitative Researcher and Machine Learning Engineer in finance. I mainly develop in Python.
 
 I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bilkent.edu.tr/bilkent/). My current research interests are [matching theory](https://github.com/oedokumaci/gale-shapley) and [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245). I’m also interested in the applications of ML in Economics.
 
 &nbsp;
+
+<hr>
 
 <h3 align="center"><i>Languages and Tools</i></h3>
 
@@ -21,14 +21,8 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
     <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
     </a>
-    <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer">
-        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/>
-    </a>
     <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
-    </a>
-    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-        <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>
     </a>
     <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
@@ -37,6 +31,8 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
     </a>
 </p>
+
+<hr>
 
 <h3 align="center"><i>Usual Workflow Badges</i></h3>
 
@@ -60,6 +56,8 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license-mit"/>
     </a>
 </p>
+
+<hr>
 
 <h3 align="center"><i>Github Statistics</i></h3>
 
