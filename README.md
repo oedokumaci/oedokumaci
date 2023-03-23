@@ -68,7 +68,3 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=oedokumaci&show_icons=true&locale=en" alt="stats" style="display:block;"/>
 </p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oedokumaci&" alt="streak" style="display:block;"/>
-</p>
