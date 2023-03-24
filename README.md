@@ -38,10 +38,10 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
 
 <p align="center">
     <a>
-        <img src="https://github.com/oedokumaci/gale-shapley/actions/workflows/tests.yml/badge.svg" alt="tests"/>
+        <img src="https://github.com/oedokumaci/template-python/actions/workflows/tests.yml/badge.svg" alt="tests"/>
     </a>
     <a>
-        <img src="https://github.com/oedokumaci/gale-shapley/actions/workflows/quality.yml/badge.svg" alt="quality"/>
+        <img src="https://github.com/oedokumaci/template-python/actions/workflows/quality.yml/badge.svg" alt="quality"/>
     </a>
     <a>
         <img src="https://img.shields.io/badge/pdm-managed-blueviolet" alt="pdm"/>
