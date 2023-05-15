@@ -62,5 +62,6 @@ I’m also a Ph.D. candidate in Economics at [Bilkent University](https://w3.bil
 <h3 align="center"><i>Github Statistics</i></h3>
 
 <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oedokumaci&show_icons=true&locale=en&layout=compact" alt="languages" style="display:inline-block;" height=150/>
   <img src="https://github-readme-stats.vercel.app/api?username=oedokumaci&show_icons=true&locale=en" alt="stats" style="display:inline-block;" height=150/>
 </p> 
