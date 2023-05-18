@@ -3,7 +3,7 @@
 
 I currently work as a Quantitative Researcher and Machine Learning Engineer in finance. I mainly develop in Python.
 
-I’m also a Ph.D. candidate in Economics at Bilkent University. My current research interests are [matching theory](https://github.com/oedokumaci/gale-shapley) and [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245). I’m also interested in the applications of ML in Economics.
+I’m also a Ph.D. candidate in Economics at Bilkent University. My current research interests are [matching theory](https://github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245). and applications of ML in Economics.
 
 &nbsp;
 
