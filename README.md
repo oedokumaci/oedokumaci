@@ -1,9 +1,11 @@
 <h1 align="center">Hey, I'm Ersoy</h1>
 <h3 align="center"><i>Quant • ML Engineer • Ph.D. Candidate</i></h3>
 
-I'm a Quantitative Researcher and Machine Learning Engineer in finance and I work as a consultant at the World Bank. I mainly develop in Python.
+I'm a Quantitative Researcher and Machine Learning Engineer in finance and I work as a consultant at the World Bank.
 
 I’m also a Ph.D. candidate in Economics at Bilkent University. My current research interests are [matching theory](https://github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of ML in Economics.
+
+I mainly develop in Python.
 
 &nbsp;
 
