@@ -1,0 +1,41 @@
+name: tests
+
+on:
+
+  workflow_call:
+    
+    inputs:
+      os_version:
+        required: true
+        type: string
+        default: ubuntu-latest
+      python_version:
+        required: true
+        type: string
+        default: "3.10"
+
+jobs:
+
+  tests:
+
+    runs-on: ${{ inputs.os_version }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+    
+    - name: Set up Python ${{ inputs.python_version }}
+      uses: actions/setup-python@main
+      with:
+        python-version: ${{ inputs.python_version }}
+
+    - name: Set up PDM
+      uses: pdm-project/setup-pdm@main
+      with:
+        python-version: ${{ inputs.python_version }}
+  
+    - name: Install dependencies and pre-commit hooks
+      run: make setup
+
+    - name: Run tests
+      run: make test
