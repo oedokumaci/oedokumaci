@@ -4,9 +4,7 @@
 
 I am a Quantitative Researcher and Developer, and Machine Learning Engineer in Finance, and I work as a short-term consultant at the World Bank.
 
-I am also a Ph.D. candidate in Economics at Bilkent University. My research interests are [computational mechanism design and matching theory](https://raw.githubusercontent.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of ML in Economics.
-
-&nbsp;
+I am also a Ph.D. candidate in Economics at Bilkent University. My research interests are [computational mechanism design and matching theory](https://www.github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of ML in Economics.
 
 <hr>
 
