@@ -2,6 +2,11 @@ name: auto assign
 
 on:
   workflow_call:
+    inputs:
+      repo_token:
+        description: 'GITHUB_TOKEN'
+        required: true
+        type: string
 
 jobs:
   add-reviews:
@@ -9,4 +14,4 @@ jobs:
     steps:
       - uses: kentaro-m/auto-assign-action@v2.0.0
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ inputs.repo_token }}
