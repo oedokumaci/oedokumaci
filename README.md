@@ -1,10 +1,10 @@
 <h1 align="center">Oral Ersoy Dokumacı</h1>
-<h3 align="center">Quant Lead • ML Engineer • Ph.D. Candidate</h3>
+<h3 align="center"><em>Quant Lead • ML Engineer • PhD Candidate</em></h3>
 <hr>
 
-I am a Quantitative Researcher and Developer, and Machine Learning Engineer in Finance, and I work as a short-term consultant at the World Bank.
+I am a Lead Quantitative Researcher and Developer, and Machine Learning Engineer at [Vitus Commodities](https://vituscommodities.com/), and I work as a consultant at the [Burning Glass Institute](https://www.burningglassinstitute.org/) and the [World Bank](https://www.worldbank.org/).
 
-I am also a Ph.D. candidate in Economics at Bilkent University. My research interests are [computational mechanism design and matching theory](https://www.github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of ML in Economics.
+I am also a Ph.D. candidate in Economics at Bilkent University. My research interests are [computational mechanism design and matching theory](https://www.github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of Machine Learning in Economics.
 
 <hr>
 
