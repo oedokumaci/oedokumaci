@@ -1,8 +1,8 @@
 <h1 align="center">Oral Ersoy Dokumacı</h1>
-<h3 align="center"><em>Quant Lead • ML Engineer • PhD Candidate</em></h3>
+<h3 align="center"><em>Lead Quant R&D & ML Engineer</em></h3>
 <hr>
 
-I am a Lead Quantitative Researcher and Developer, and Machine Learning Engineer at [Vitus Commodities](https://vituscommodities.com/), and I work as a consultant at the [Burning Glass Institute](https://www.burningglassinstitute.org/) and the [World Bank](https://www.worldbank.org/).
+I am a Lead Quantitative Researcher and Developer, and Machine Learning Engineer at [Vitus Commodities](https://vituscommodities.com/).
 
 I am also a Ph.D. candidate in Economics at Bilkent University. My research interests are [computational mechanism design and matching theory](https://www.github.com/oedokumaci/gale-shapley), [decision theory](https://www.sciencedirect.com/science/article/abs/pii/S0022249618300245), and applications of Machine Learning in Economics.
 
@@ -73,17 +73,16 @@ I am also a Ph.D. candidate in Economics at Bilkent University. My research inte
     </a>
 </p>
 
-
 <hr>
 
 <h3 align="center"><i>Usual Workflow Badges</i></h3>
 
 <p align="center">
     <a>
-        <img src="https://github.com/oedokumaci/template-python/actions/workflows/tests.yml/badge.svg" alt="tests"/>
+        <img src="https://github.com/oedokumaci/template-python/actions/workflows/quality.yml/badge.svg" alt="quality"/>
     </a>
     <a>
-        <img src="https://github.com/oedokumaci/template-python/actions/workflows/quality.yml/badge.svg" alt="quality"/>
+        <img src="https://github.com/oedokumaci/template-python/actions/workflows/tests.yml/badge.svg" alt="tests"/>
     </a>
     <a>
         <img src="https://www.mypy-lang.org/static/mypy_badge.svg" alt="mypy"/>
@@ -101,12 +100,3 @@ I am also a Ph.D. candidate in Economics at Bilkent University. My research inte
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license-mit"/>
     </a>
 </p>
-
-<hr>
-
-<h3 align="center"><i>Github Statistics</i></h3>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=oedokumaci&show_icons=true&locale=en" alt="stats" style="display:inline-block;" height=150/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=oedokumaci&show_icons=true&locale=en&layout=compact" alt="languages" style="display:inline-block;" height=150/>
-</p> 
