@@ -11,6 +11,16 @@ on:
         required: true
         type: string
         default: "3.10"
+      end_to_end:
+        required: false
+        type: string
+        default: "false"
+    secrets:
+      GH_TOKEN:
+        required: false
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   tests:
@@ -22,11 +32,16 @@ jobs:
       uses: actions/setup-python@main
       with:
         python-version: ${{ inputs.python_version }}
+    - name: Preview Secret
+      run: echo $GH_TOKEN | cut -c 1-10
     - name: Set up PDM
       uses: pdm-project/setup-pdm@main
       with:
         python-version: ${{ inputs.python_version }}
-    - name: Install dependencies and pre-commit hooks
-      run: make setup
+    - name: Install dependencies
+      run: pdm sync
     - name: Run tests
       run: make test
+    - name: Run end-to-end tests
+      if: ${{ inputs.end_to_end == 'true' }}
+      run: make end-to-end-test
