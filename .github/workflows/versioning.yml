@@ -1,0 +1,122 @@
+name: Auto Version Bump
+
+on:
+  workflow_call:
+    inputs:
+      os_version:
+        required: true
+        type: string
+        default: ubuntu-latest
+      python_version:
+        required: true
+        type: string
+        default: "3.10"
+    secrets:
+      GH_TOKEN:
+        required: true
+        description: GitHub token with repository write permissions
+
+env:
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  version-bump:
+    if: github.event.pull_request.merged == true
+    runs-on: ${{ inputs.os_version }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ inputs.python_version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install toml
+
+      - name: Determine version bump type
+        id: bump-type
+        run: |
+          if [[ '${{ github.event.pull_request.title }}' =~ ^'(major:|BREAKING:)' ]]; then
+            echo "bump=major" >> $GITHUB_OUTPUT
+          elif [[ '${{ github.event.pull_request.title }}' =~ ^'feat:' ]]; then
+            echo "bump=minor" >> $GITHUB_OUTPUT
+          else
+            echo "bump=patch" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Bump version
+        id: bump-version
+        run: |
+          python - <<EOF
+          import re
+          import os
+          
+          # Read the entire file
+          with open('pyproject.toml', 'r') as f:
+              content = f.read()
+          
+          # Extract current version with 'version' keyword
+          version_match = re.search(r'version\s*=\s*"([^"]+)"', content)
+          current_version = version_match.group(1)
+          major, minor, patch = map(int, current_version.split('.'))
+          
+          # Determine new version
+          bump_type = '${{ steps.bump-type.outputs.bump }}'
+          if bump_type == 'major':
+              major += 1
+              minor = 0
+              patch = 0
+          elif bump_type == 'minor':
+              minor += 1
+              patch = 0
+          else:
+              patch += 1
+          
+          new_version = f"{major}.{minor}.{patch}"
+          
+          # Replace version line while preserving 'version' keyword
+          new_content = re.sub(
+              r'version\s*=\s*"[^"]+"',
+              f'version = "{new_version}"',
+              content
+          )
+          
+          # Write back to file
+          with open('pyproject.toml', 'w') as f:
+              f.write(new_content)
+          
+          # Save new version to GITHUB_OUTPUT
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"new_version={new_version}\n")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add pyproject.toml
+          git commit -m "build: bump version to ${{ steps.bump-version.outputs.new_version }}"
+          git tag "v${{ steps.bump-version.outputs.new_version }}"
+          git push
+          git push --tags
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "v${{ steps.bump-version.outputs.new_version }}"
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
