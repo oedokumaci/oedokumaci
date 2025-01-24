@@ -47,13 +47,22 @@ jobs:
       - name: Determine version bump type
         id: bump-type
         run: |
-          if [[ '${{ github.event.pull_request.title }}' =~ ^'(major:|BREAKING:)' ]]; then
-            echo "bump=major" >> $GITHUB_OUTPUT
-          elif [[ '${{ github.event.pull_request.title }}' =~ ^'feat:' ]]; then
-            echo "bump=minor" >> $GITHUB_OUTPUT
-          else
-            echo "bump=patch" >> $GITHUB_OUTPUT
-          fi
+          python - <<EOF
+          import os
+
+          pr_title = '${{ github.event.pull_request.title }}'.casefold()
+          
+          if pr_title.startswith(('major', 'breaking')):
+              bump_type = 'major'
+          elif pr_title.startswith('feat'):
+              bump_type = 'minor'
+          else:
+              bump_type = 'patch'
+          
+          # Write to GITHUB_OUTPUT
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"bump={bump_type}\n")
+          EOF
 
       - name: Bump version
         id: bump-version
