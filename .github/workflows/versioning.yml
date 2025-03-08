@@ -10,7 +10,7 @@ on:
       python_version:
         required: true
         type: string
-        default: "3.10"
+        default: "3.12"
     secrets:
       GH_TOKEN:
         required: true
@@ -121,11 +121,12 @@ jobs:
           git push --tags
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: "v${{ steps.bump-version.outputs.new_version }}"
           generate_release_notes: true
           draft: false
           prerelease: false
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
